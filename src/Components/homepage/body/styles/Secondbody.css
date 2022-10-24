@@ -1,0 +1,19 @@
+.StyleText {
+    text-align: center;
+    font-size: 200px;
+    margin-top: 10px;
+    color: #e9fbe8;
+}
+
+.StyleTextBottom {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: -220px;
+    color: green;
+}
+
+#SVG {
+    margin-top: -300px;
+    margin-left: -50px;
+}
