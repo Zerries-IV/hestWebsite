@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../body/styles/Firstbody.css'
 import Logo from '../../global/Logo'
 import {SOCIALS} from '../../global/SocialIcons'
 
 const Firstbody = () => {
+    const [text] = useState('0xa4C876143891F012991E5e06fABde7D6Ad31E1b0')
+    const [alert, setAlert] = useState(false)
+    function copyToClipboard(){
+        navigator.clipboard.writeText(text)
+        setAlert(true)
+    }
   return (
     <div style={{ display: 'flex', gap: '2%', margin: '0 20px',}}>
     <div>
@@ -16,6 +22,24 @@ const Firstbody = () => {
     <button className="PancakeButton">
         Let's get started on Pancake
     </button>
+    {
+        !alert
+        ? <div></div>
+        : <div className="Alert" style={{ 
+        marginTop: '5px', color: 'white', backgroundColor: 'green', width:'20%', textAlign: 'center'
+        ,borderRadius: '30px', padding: '5px'
+        }}>
+        COPIED
+        </div>
+    }
+    <div style={{ display: 'flex'}}>
+    <h1 style={{ fontSize: '18px', color: 'green'}}
+    >0xa4C876143891F012991E5e06fABde7D6Ad31E1b0 </h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/5993/5993159.png" alt="" width= '20px' height='20px'
+        style={{ cursor: 'pointer'}}
+        onClick={() => copyToClipboard()}
+    />
+    </div>
     {/* FOLLOW OUR SOCIALS */}
     <h2> You have an opinion? Join us on</h2>
     {

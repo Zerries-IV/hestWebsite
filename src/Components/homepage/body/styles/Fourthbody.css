@@ -1,0 +1,50 @@
+#SVG3 {
+    margin-top: -30px;
+    margin-left: -80px;
+}
+#SVG4 {
+    margin-top: -500px;
+    margin-left: 80%;
+}
+
+.MetricStyle{
+    text-align: center;
+    font-size: 150px;
+    margin-top: 10px;
+    color: #e9fbe8;
+}
+
+.MetricStyleBottom {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    margin-top: -180px;
+    color: green;
+}
+
+.TokenomicsImage {
+    width: 600px;
+    height: 100% !important;
+    background-color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px 0 20px 0;
+}
+
+.TokenomicsImage img {
+    width: 90%;
+}
+
+.TokenomicsTitle {
+    text-align: center;
+    color: #e9fbe8;
+    font-size: 100px;
+    margin: 0;
+}
+
+.TokenomicsAnswer {
+    text-align: center;
+    color: green;
+    font-size: 80px;
+    margin: -70px 0 0 0;
+}

@@ -1,0 +1,8 @@
+.Number {
+    margin-top: -65px;
+    margin-left: 20px;
+}
+.StepsToGet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
