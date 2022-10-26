@@ -52,7 +52,7 @@ const Fourthbody = () => {
            {
             TOKENOMICS.map(tokenomics => {
               return (
-                <div>
+                <div key={tokenomics.title}>
                 <h1 className='TokenomicsTitle'>{tokenomics.title}</h1>
                 <h2 className='TokenomicsAnswer'>{tokenomics.subTitle}</h2>
                 </div>

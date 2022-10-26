@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../body/styles/Firstbody.css'
-import Logo from '../../global/Logo'
+import Logo, { MintMeLogo } from '../../global/Logo'
 import {SOCIALS} from '../../global/SocialIcons'
 
 const Firstbody = () => {
@@ -8,7 +8,7 @@ const Firstbody = () => {
     const [alert, setAlert] = useState(false)
     function copyToClipboard(){
         navigator.clipboard.writeText(text)
-        setAlert(true)
+        setAlert(!alert)
     }
   return (
     <div style={{ display: 'flex', gap: '2%', margin: '0 20px',}}>
@@ -19,18 +19,20 @@ const Firstbody = () => {
     </h1>
     <h4 style={{ marginTop: '-40px'}}> Welcome to the crypto that would revolutionize the world.</h4>
     <p> Hest is new to the Binance ecosystem and has properly adjusted <br />to become the best of its kind</p>
-    <button className="PancakeButton">
-        Let's get started on Pancake
+    <button className="MintMeButton">
+       <MintMeLogo H = '30px'/>
+       <h3>Get started on mintMe </h3>
     </button>
     {
         !alert
         ? <div></div>
-        : <div className="Alert" style={{ 
+        : <h1 className="Alert" style={{ 
         marginTop: '5px', color: 'white', backgroundColor: 'green', width:'20%', textAlign: 'center'
-        ,borderRadius: '30px', padding: '5px'
+        ,borderRadius: '30px', padding: '5px', fontSize: '16px'
         }}>
         COPIED
-        </div>
+        </h1>
+        
     }
     <div style={{ display: 'flex'}}>
     <h1 style={{ fontSize: '18px', color: 'green'}}

@@ -1,18 +1,18 @@
 import { Divider } from '@mui/material'
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import Logo from '../global/Logo'
+import Logo, { MintMeLogo } from '../global/Logo'
 import { SOCIALS } from '../global/SocialIcons'
 import '../homepage/styles/NavigationBar.css'
 
 const NAVIGATIONLINKS = [
   {
     "name": 'Trade',
-    "link": ''
+    "link": 'https://www.mintme.com/token/Hest/MINTME/trade'
   },
   {
     "name": 'Roadmap',
-    "link": ''
+    "link": '#ROADMAP'
   },
   {
     "name": 'Airdrop',
@@ -20,11 +20,11 @@ const NAVIGATIONLINKS = [
   },
   {
     "name": 'Support',
-    "link": ''
+    "link": '#SUPPORT'
   },
   {
     "name": 'Whitepaper',
-    "link": ''
+    "link": `/white-paper`
   },
 ]
 
@@ -70,7 +70,10 @@ const NavigationBar = () => {
     </div>
     {/* SWAPS */}
     <div>
-      <button className="PancakeButton">Connect to Pancake</button>
+      <button className="MintMeButton">
+       <MintMeLogo H = '30px'/>
+       <h3>Connect to mintMe </h3>
+    </button>
     </div>
     </div>
     <Divider />
