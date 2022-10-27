@@ -2,7 +2,7 @@ import React from 'react'
 import "../../App.css"
 import { useNavigate } from 'react-router'
 
-const LogoImg = 'images/logo.png'
+const LogoImg = 'https://raw.githubusercontent.com/tinymanorg/asa-list/review/assets/HS-370073176/icon.png'
 const MintMe = 'https://s2.coinmarketcap.com/static/img/coins/200x200/3361.png'
 
 const Logo = (props) => {

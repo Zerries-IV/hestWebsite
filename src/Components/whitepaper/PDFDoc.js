@@ -26,7 +26,7 @@ const PDFDoc = () => {
         }
         <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center'}}>
         <Document
-        file="/HEST.pdf"
+        file={require('./HEST.pdf')}
         onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={console.error}
         >
