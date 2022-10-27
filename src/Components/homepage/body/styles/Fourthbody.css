@@ -48,3 +48,20 @@
     font-size: 80px;
     margin: -70px 0 0 0;
 }
+
+@media only screen and (max-width: 1024px){
+    .MetricStyle{
+        font-size: 110px;
+    }
+    .MetricStyleBottom{
+        font-size: 70px;
+        margin-top: -140px;
+    }
+    .TokenomicsTitle{
+        font-size: 70px;
+    }
+    .TokenomicsAnswer{
+        font-size: 40px;
+        margin-top: -20px;
+    }
+}

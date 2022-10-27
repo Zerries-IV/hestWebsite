@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo, { MintMeLogo } from '../../global/Logo'
 import { SOCIALS } from '../../global/SocialIcons'
 
 const Seventhbody = () => {
+    const [text] = useState('0xa4C876143891F012991E5e06fABde7D6Ad31E1b0')
+    function copyToClipboard(){
+        navigator.clipboard.writeText(text)
+    }
   return (
     <div>
    <div style={{ backgroundColor: 'green', padding: '20px 30px', margin: '50px 0 0 0'}}>
@@ -14,7 +18,7 @@ const Seventhbody = () => {
     {
         SOCIALS.map(socials => {
             return (
-                <a href={socials.link} target="_blank" rel="noopener noreferrer" key={socials.name}>
+                <a href={socials.link} target="_blank" rel="noopener noreferrer" key={socials.name} className="Social_Img">
                 <img style={{ height: '40px', margin: '10px'}} src={socials.image} alt={socials.name} srcSet=""/>
                 </a>
             )
@@ -31,7 +35,7 @@ const Seventhbody = () => {
    color: 'green',
    justifyContent: 'space-around'}}>
         <h3 style={{ margin: '3px',}}> Copyright ©2022, HestLabs</h3>
-        <h4 style={{ margin: '3px',}}> Donate ❤️: 0xa4C876143891F012991E5e06fABde7D6Ad31E1b0</h4>
+        <h4 style={{ margin: '3px', cursor: 'pointer'}} onClick={() => copyToClipboard()}> Donate ❤️: 0xa4C876143891F012991E5e06fABde7D6Ad31E1b0</h4>
     </div>
     <a id="SUPPORT" href=' '> </a> {/* ANCHOR LINK FOR THISBODY*/}
    </div>

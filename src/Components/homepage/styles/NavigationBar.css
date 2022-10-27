@@ -1,3 +1,9 @@
+.Navigation_Body{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .NavigationLinks {
     text-decoration: none;
     color: black;
@@ -27,4 +33,21 @@
 .MintMeButton:hover {
     background-color: brown;
     color: white;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .Navigation_Body{
+       margin: 5px 10px;
+       display: flex;
+       justify-content: 'space-between'
+    }
+    .Logo_Text > h1 {
+        font-size: 30px !important;
+        margin-top: 10px !important;
+    }
+    div > .Social_Img > img {
+        height: 30px !important;
+        margin-top: 15px !important;
+    }
 }

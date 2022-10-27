@@ -11,7 +11,7 @@ const Firstbody = () => {
         setAlert(!alert)
     }
   return (
-    <div style={{ display: 'flex', gap: '2%', margin: '0 20px',}}>
+    <div className='First_Body'>
     <div>
     <h1 className='HestIntro'>
         Hey there!!<br />
@@ -19,10 +19,16 @@ const Firstbody = () => {
     </h1>
     <h4 style={{ marginTop: '-40px'}}> Welcome to the crypto that would revolutionize the world.</h4>
     <p> Hest is new to the Binance ecosystem and has properly adjusted <br />to become the best of its kind</p>
-    <button className="MintMeButton">
+    <div>
+      <a href='https://www.mintme.com/token/Hest/MINTME/trade' style={{
+        textDecoration: 'none'
+      }}>
+      <button className="MintMeButton">
        <MintMeLogo H = '30px'/>
        <h3>Get started on mintMe </h3>
     </button>
+    </a>
+    </div>
     {
         !alert
         ? <div></div>
@@ -47,14 +53,14 @@ const Firstbody = () => {
     {
         SOCIALS.map(socials => {
             return (
-                <a href={socials.link} target="_blank" rel="noopener noreferrer" key={socials.name}>
+                <a href={socials.link} target="_blank" rel="noopener noreferrer" key={socials.name} className='Social_Img'>
                 <img style={{ height: '40px', margin: '10px'}} src={socials.image} alt={socials.name} srcSet=""/>
                 </a>
             )
         })
     }
     </div>
-    <div>
+    <div style={{ maxHeight: '500px', maxWidth: '100%', textAlign: 'center'}}>
     <Logo HEIGHT= '100%'/>
     </div>
     </div>

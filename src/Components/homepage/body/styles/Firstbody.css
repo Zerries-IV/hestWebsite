@@ -1,3 +1,9 @@
 .HestIntro{
     font-size: 80px;
 }
+
+.First_Body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 20px;
+}

@@ -24,16 +24,16 @@ const NAVIGATIONLINKS = [
   },
   {
     "name": 'Whitepaper',
-    "link": `/white-paper`
+    "link": `https://hest.live/wp-content/uploads/2022/10/HEST.pdf`
   },
 ]
 
 const NavigationBar = () => {
   return (
     <div>
-    <div style={{ margin: '10px 20px', display: 'flex', justifyContent: 'space-between'}}>
+    <div className='Navigation_Body'>
     {/* LOGO */}
-      <div style={{ display: 'flex'}}>
+      <div style={{ display: 'flex'}} className='Logo_Text'>
       <Logo HEIGHT = '50px' />
       <h1 style={{ margin: '0', fontSize: '40px'}}> Hest</h1>
     </div>
@@ -61,7 +61,7 @@ const NavigationBar = () => {
       {
         SOCIALS.map(socials => {
           return (
-            <a href={socials.link} target="_blank" rel="noopener noreferrer" key={socials.name}>
+            <a href={socials.link} key={socials.name} className="Social_Img">
             <img style={{ height: '40px', margin: '10px'}} src={socials.image} alt={socials.name} srcSet=""/>
             </a>
           )
@@ -70,10 +70,14 @@ const NavigationBar = () => {
     </div>
     {/* SWAPS */}
     <div>
+      <a href='https://www.mintme.com/token/Hest/MINTME/trade' style={{
+        textDecoration: 'none'
+      }}>
       <button className="MintMeButton">
        <MintMeLogo H = '30px'/>
        <h3>Connect to mintMe </h3>
     </button>
+    </a>
     </div>
     </div>
     <Divider />

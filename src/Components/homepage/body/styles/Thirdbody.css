@@ -7,3 +7,13 @@
     grid-template-columns: repeat(4, 1fr);
     margin: 10px 50px;
 }
+
+@media only screen and (max-width: 1024px){
+    .Roadmap {
+        font-size: 150px;
+    }
+    .RoadmapBottom {
+        margin-top: -180px;
+        font-size: 60px;
+    }
+}
