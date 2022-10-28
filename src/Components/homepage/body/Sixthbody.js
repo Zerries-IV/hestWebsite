@@ -6,10 +6,10 @@ const Sixthbody = () => {
     const [b, setB] = useState(false)
   return (
     <div>
-        <h1 className="StyleText">
+        <h1 className="StyleText FAQTop">
             F.A.Q
         </h1>
-        <h3 className="StyleTextBottom">
+        <h3 className="StyleTextBottom FAQBottom">
             FREQUENT QUESTIONS
         </h3>
         <div className='FAQ'>
@@ -37,7 +37,9 @@ const Sixthbody = () => {
                     </p>
                     </>
                     :  
-                    <h1 style={{ fontSize: '30px', color: 'green',}}> What does $Hest aim to achieve?</h1>
+                    <h1 style={{ fontSize: '30px', color: 'green',}}
+                    className='FAQQuestion'
+                    > What does $Hest aim to achieve?</h1>
                 }
             </div>
            {/* The reward system */}
@@ -57,7 +59,9 @@ const Sixthbody = () => {
                     </p>
                     </>
                     :  
-                    <h1 style={{ fontSize: '30px', color: 'green',}}> How does the Hest trading system work? Where do I trade?</h1>
+                    <h1 style={{ fontSize: '30px', color: 'green',}}
+                    className='FAQQuestion'
+                    > How does the Hest trading system work? Where do I trade?</h1>
                 }
             </div>
         </div>

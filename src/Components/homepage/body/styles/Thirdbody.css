@@ -1,6 +1,7 @@
 #SVG2 {
     margin-top: -150px;
     margin-left: -150px;
+    width: 500px;
 }
 .RoadmapList {
     display: grid;
@@ -15,5 +16,25 @@
     .RoadmapBottom {
         margin-top: -180px;
         font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    #SVG2 {
+        width: 400px;
+    }
+    .Roadmap {
+        font-size: 120px;
+        margin-top: 100px;
+    }
+    .RoadmapBottom {
+        margin-top: -150px;
+        font-size: 50px;
+    }
+    .RoadmapList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .RoadmapList_Text{
+        font-size: 16px !important;
     }
 }

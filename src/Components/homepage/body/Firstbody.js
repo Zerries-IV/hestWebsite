@@ -60,7 +60,7 @@ const Firstbody = () => {
         })
     }
     </div>
-    <div style={{ maxHeight: '500px', maxWidth: '100%', textAlign: 'center'}}>
+    <div style={{ maxHeight: '500px', textAlign: 'center'}}>
     <Logo HEIGHT= '100%'/>
     </div>
     </div>

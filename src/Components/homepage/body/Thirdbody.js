@@ -68,7 +68,7 @@ const Thirdbody = () => {
   return (
     <div style={{ backgroundColor: '#e9e9e6', padding: '10px 0', overflowX: 'hidden'}}>
     {/* ANCHOR LINK FOR THIRDBODY IN SECONDBODY*/}
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width='500px' id='SVG2'>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id='SVG2'>
      <path fill="#FFFFFF" d="M45.2,-15.2C54.2,13,54.1,43.6,36.4,58.4C18.8,73.2,-16.4,72.1,-34.5,56.7C-52.7,41.4,-53.7,11.8,-45.1,-15.8C-36.5,-43.5,-18.3,-69.2,-0.1,-69.2C18.1,-69.1,36.2,-43.4,45.2,-15.2Z" transform="translate(100 100)" />
      </svg>
     <div style={{ marginTop: '-350px'}}>
@@ -86,7 +86,7 @@ const Thirdbody = () => {
                     ? roadmaplist.true
                     : roadmaplist.false
                 } alt="tick" srcSet='' style={{ width: '30px', height: '30px'}}/>
-                <h3 style={{ color: '#ffffff'}}>{roadmaplist.item}</h3>
+                <h3 style={{ color: '#ffffff'}} className="RoadmapList_Text">{roadmaplist.item}</h3>
                 </div>
             )
         })

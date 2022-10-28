@@ -57,7 +57,7 @@ const NavigationBar = () => {
      </Container>
     </Navbar>
     {/* SOCIALS */}
-    <div style={{ display: 'flex'}}>
+    <div style={{ display: 'flex'}} className="Social_Div">
       {
         SOCIALS.map(socials => {
           return (
@@ -75,8 +75,8 @@ const NavigationBar = () => {
       }}>
       <button className="MintMeButton">
        <MintMeLogo H = '30px'/>
-       <h3>Connect to mintMe </h3>
-    </button>
+       <h3 className='MintMeButton_Text'>Connect to mintMe </h3>
+      </button>
     </a>
     </div>
     </div>

@@ -1,0 +1,12 @@
+.Footer{
+    margin: 3px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 769px){
+    .SeventhBody{
+        font-size: 40px !important;
+    }
+    .Footer{
+        font-size: 15px;
+    }
+}

@@ -14,11 +14,36 @@
 }
 
 #SVG {
+    width: 400px;
     margin-left: -50px;
 }
 
 @media only screen and (max-width: 1024px){
     .Dollar_Span{
         color: white;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    #SVG{
+        width: 380px;
+        margin-left: 0;
+    }
+    .StyleText{
+        font-size: 170px;
+    }
+    .Text_H{
+        color: white;
+    }
+    .StyleTextBottom{
+        font-size: 60px;
+        margin-top: -190px;
+    }
+    .Whyhest{
+        margin-top: 100px !important;
+        margin-bottom: 30px;
+    }
+    .Whyhest_Text{
+        font-size: 18px !important;
     }
 }
