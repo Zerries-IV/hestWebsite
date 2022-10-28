@@ -30,3 +30,16 @@
         font-size: 15px !important;
     }
 }
+
+@media only screen and (max-width: 321px){
+    .FAQTop{
+        font-size: 90px;
+    }
+    .FAQBottom{
+        font-size: 20px;
+        margin-top: -90px;
+    }
+    .FAQQuestion{
+        font-size: 12px !important;
+    }
+}

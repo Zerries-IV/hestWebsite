@@ -86,4 +86,13 @@
     .NavigationFor426px{
         margin: 10px 5px !important;
     }
+    .NavItems{
+        font-size: 11px !important;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .NavItems{
+        font-size: 8px !important;
+    }
 }

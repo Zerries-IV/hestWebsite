@@ -68,3 +68,27 @@
         display: grid !important;
     }
 }
+
+@media only screen and (max-width: 321px){
+    #SVG{
+        width: 100px;
+        margin-left: 0;
+    }
+    .StyleText{
+        font-size: 70px;
+        margin-top: 280px;
+    }
+    .Text_E,     
+    .Text_H,
+    .Dollar_Span{
+        color: green !important;
+    }
+    .StyleTextBottom{
+        font-size: 30px;
+        margin-top: -70px;
+    }
+    .Whyhest{
+        display: grid !important;
+        margin-top: 0 !important;
+    }
+}

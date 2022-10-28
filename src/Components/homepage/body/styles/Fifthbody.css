@@ -28,3 +28,12 @@
         font-size: 12px !important;
     }
 }
+
+@media only screen and (max-width: 321px){
+    .StepsToGet > div > div > h2 {
+        font-size: 14px !important;
+    }
+    .StepsToGet > div > div > p{
+        font-size: 10px !important;
+    }
+}

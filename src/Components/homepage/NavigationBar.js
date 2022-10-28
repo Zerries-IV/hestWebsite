@@ -80,10 +80,11 @@ const NavigationBar = () => {
     </a>
     </div>
     </div>
+    {/* Navigation bar for 426px and below */}
     <Navbar className="NavigationFor426px">
       <Container>
         <Navbar.Collapse>
-          <Nav style={{ fontSize: '12px', fontWeight: 'bold'}}>
+          <Nav style={{ fontSize: '12px', fontWeight: 'bold'}} className="NavItems">
           {
             NAVIGATIONLINKS.map(navigationlinks => {
               return (
