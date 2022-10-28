@@ -42,3 +42,22 @@
         margin-top: -20px;
     }
 }
+
+@media only screen and (max-width: 376px){
+    .HestIntro{
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .IntroSub{
+        font-size: 11px;
+    }
+    .IntroPSub{
+        font-size: 10px;
+    }
+    .Alert{
+        font-size: 11px !important;
+    }
+    .ContractAddress{
+        font-size: 11px !important;
+    }
+}

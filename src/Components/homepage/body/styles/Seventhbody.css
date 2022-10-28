@@ -2,6 +2,9 @@
     margin: 3px;
     cursor: pointer;
 }
+.LogoMobile{
+    display: none !important;
+}
 @media only screen and (max-width: 769px){
     .SeventhBodyH1{
         font-size: 40px !important;
@@ -20,5 +23,20 @@
     }
     .SeventhBody{
         padding: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .SeventhBodyH1{
+        font-size: 20px !important;
+    }
+    .Footer{
+        font-size: 7px;
+    }
+    .AllLogo{
+        display: none !important;
+    }
+    .LogoMobile{
+        display: flex !important;
     }
 }

@@ -124,7 +124,24 @@
     .Tokenomics_Info{
         display: flex !important;
         flex-direction: column !important;
+        align-self: center;
     } 
+    .TokenomicsImage{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .FourthBody{
+        padding: 10px !important;
+    }
+    .TokenomicsTitle{
+        font-size: 60px;
+    }
+    .TokenomicsAnswer{
+        font-size: 30px;
+        margin-top: -20px;
+    }
     .TokenomicsImage{
         width: 100%;
     }

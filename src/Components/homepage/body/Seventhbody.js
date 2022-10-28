@@ -28,9 +28,13 @@ const Seventhbody = () => {
             )
         })
     }
-    <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+    <div style={{ display: 'flex', justifyContent: 'space-between'}} className="AllLogo">
         <Logo HEIGHT = '200px'/>
         <MintMeLogo H = '200px' />
+    </div>
+    <div style={{ display: 'flex', justifyContent: 'space-between'}} className="LogoMobile">
+        <Logo HEIGHT = '150px'/>
+        <MintMeLogo H = '150px' />
     </div>
    </div>
    <div style={{ display: 'flex', 
