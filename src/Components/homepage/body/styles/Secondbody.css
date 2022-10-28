@@ -47,3 +47,24 @@
         font-size: 18px !important;
     }
 }
+
+@media only screen and (max-width: 426px){
+    #SVG{
+        width: 300px;
+        margin-left: 0;
+    }
+    .StyleText{
+        font-size: 100px;
+        margin-top: 100px;
+    }
+    .StyleTextBottom{
+        font-size: 40px;
+        margin-top: -120px;
+    }
+    .Text_E{
+        color: white;
+    }
+    .Whyhest{
+        display: grid !important;
+    }
+}

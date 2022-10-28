@@ -105,3 +105,27 @@
         margin-bottom: 20px;
     }
 }
+
+@media only screen and (max-width: 426px){
+    #SVG3, #SVG4 {
+        width: 200px;
+    }
+    #SVG3{
+        margin-top: 10px;
+    }
+    .MetricStyle{
+        font-size: 45px;
+        margin-top: 100px;
+    }
+    .MetricStyleBottom{
+        font-size: 40px;
+        margin-top: -60px;
+    }
+    .Tokenomics_Info{
+        display: flex !important;
+        flex-direction: column !important;
+    } 
+    .TokenomicsImage{
+        width: 100%;
+    }
+}

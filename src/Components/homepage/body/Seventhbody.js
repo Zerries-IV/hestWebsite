@@ -10,9 +10,10 @@ const Seventhbody = () => {
     }
   return (
     <div>
-   <div style={{ backgroundColor: 'green', padding: '20px 30px', margin: '50px 0 0 0'}}>
+   <div style={{ backgroundColor: 'green', padding: '20px 30px', margin: '50px 0 0 0'}}
+   className="SeventhBody">
     <h1 style={{ color: 'white', fontSize: '60px'}}
-    className='SeventhBody'
+    className='SeventhBodyH1'
     >
         Welcome to the community
         <br />

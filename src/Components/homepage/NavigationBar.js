@@ -36,9 +36,9 @@ const NavigationBar = () => {
       <div style={{ display: 'flex'}} className='Logo_Text'>
       <Logo HEIGHT = '50px' />
       <h1 style={{ margin: '0', fontSize: '40px'}}> Hest</h1>
-    </div>
+      </div>
     {/* NAVIGATION */}
-    <Navbar style={{ margin: '20px 0 20px 40px'}}>
+    <Navbar style={{ margin: '20px 0 20px 40px'}} className="NavigationForAll">
      <Container>
      <Navbar.Collapse>
      <Nav style={{ fontSize: '15px', fontWeight: 'bold'}}>
@@ -80,6 +80,24 @@ const NavigationBar = () => {
     </a>
     </div>
     </div>
+    <Navbar className="NavigationFor426px">
+      <Container>
+        <Navbar.Collapse>
+          <Nav style={{ fontSize: '12px', fontWeight: 'bold'}}>
+          {
+            NAVIGATIONLINKS.map(navigationlinks => {
+              return (
+                <Nav.Link className='NavigationLinks' key={navigationlinks.name} 
+                href={navigationlinks.link}>
+                  {navigationlinks.name}
+                </Nav.Link>
+              )
+            })
+          }
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     <Divider />
     </div>
   )

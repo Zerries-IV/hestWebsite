@@ -25,7 +25,8 @@ const Secondbody = () => {
         <div style={{ marginTop: '-350px'}}>
         <h1 className='StyleText'>
         <span className='Dollar_Span'>$</span>
-        <span className='Text_H'>H</span>EST</h1>
+        <span className='Text_H'>H</span>
+        <span className='Text_E'>E</span>ST</h1>
         <h2 className='StyleTextBottom'> Why Hest? </h2>
         <div style={{ display: 'flex', justifyContent: 'space-around', textAlign: 'center'}}
         className="Whyhest"

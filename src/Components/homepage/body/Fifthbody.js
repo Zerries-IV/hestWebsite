@@ -3,8 +3,8 @@ import '../body/styles/Fifthbody.css'
 
 const Fifthbody = () => {
   return (
-    <div style={{padding: '10px 40px'}}>
-        <h1 className="StyleText Roadmap"> HOW I GET</h1>
+    <div style={{padding: '10px 40px'}} className="FifthBody">
+        <h1 className="StyleText Roadmap For426"> HOW I GET</h1>
         <h2 className="StyleTextBottom RoadmapBottom"> $ HEST</h2>
         <div className="StepsToGet">
         {/* CREATE METAMASK */}

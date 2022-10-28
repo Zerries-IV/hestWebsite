@@ -13,3 +13,18 @@
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 426px){
+    .FifthBody{
+        padding: 10px !important;
+    }
+    .For426{
+        margin-top: 20px !important;
+    }
+    .StepsToGet > div > div > h2 {
+        font-size: 18px !important;
+    }
+    .StepsToGet > div > div > p{
+        font-size: 12px !important;
+    }
+}

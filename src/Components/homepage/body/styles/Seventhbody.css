@@ -3,10 +3,22 @@
     cursor: pointer;
 }
 @media only screen and (max-width: 769px){
-    .SeventhBody{
+    .SeventhBodyH1{
         font-size: 40px !important;
     }
     .Footer{
         font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .SeventhBodyH1{
+        font-size: 25px !important;
+    }
+    .Footer{
+        font-size: 8px;
+    }
+    .SeventhBody{
+        padding: 10px !important;
     }
 }

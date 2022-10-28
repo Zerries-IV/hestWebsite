@@ -15,6 +15,9 @@
     font-size: 17px;
 }
 
+.NavigationFor426px{
+    display: none;
+}
 
 .MintMeButton {
     display: flex;
@@ -61,5 +64,20 @@
     }
     .MintMeButton_Text {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .NavigationForAll{
+        display: none !important;
+    }
+    .NavigationFor426px{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .FirstBodyMintMeButton_Text{
+        display: flex;
+        font-size: 10px;
     }
 }

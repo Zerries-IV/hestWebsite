@@ -17,15 +17,17 @@ const Firstbody = () => {
         Hey there!!<br />
         <span style={{ color: 'green'}}> Hest is for you.</span>
     </h1>
-    <h4 style={{ marginTop: '-40px'}}> Welcome to the crypto that would revolutionize the world.</h4>
-    <p> Hest is new to the Binance ecosystem and has properly adjusted <br />to become the best of its kind</p>
+    <h4 style={{ marginTop: '-40px'}} className="IntroSub"> 
+    Welcome to the crypto that would revolutionize the world.
+    </h4>
+    <p className='IntroPSub'> Hest is new to the Binance ecosystem and has properly adjusted <br />to become the best of its kind</p>
     <div>
       <a href='https://www.mintme.com/token/Hest/MINTME/trade' style={{
         textDecoration: 'none'
       }}>
       <button className="MintMeButton">
        <MintMeLogo H = '30px'/>
-       <h3>Get started on mintMe </h3>
+       <h3 className='FirstBodyMintMeButton_Text'>Get started on mintMe </h3>
     </button>
     </a>
     </div>
@@ -42,6 +44,7 @@ const Firstbody = () => {
     }
     <div style={{ display: 'flex'}}>
     <h1 style={{ fontSize: '18px', color: 'green'}}
+    className="ContractAddress"
     >0xa4C876143891F012991E5e06fABde7D6Ad31E1b0 </h1>
     <img src="https://cdn-icons-png.flaticon.com/512/5993/5993159.png" alt="" width= '20px' height='20px'
         style={{ cursor: 'pointer'}}
@@ -49,7 +52,8 @@ const Firstbody = () => {
     />
     </div>
     {/* FOLLOW OUR SOCIALS */}
-    <h2> You have an opinion? Join us on</h2>
+    <h2 className='JoinUs'> You have an opinion? Join us on</h2>
+    <div className='FirstBodySocials'>
     {
         SOCIALS.map(socials => {
             return (
@@ -59,6 +63,7 @@ const Firstbody = () => {
             )
         })
     }
+    </div>
     </div>
     <div style={{ maxHeight: '500px', textAlign: 'center'}}>
     <Logo HEIGHT= '100%'/>
