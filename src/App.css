@@ -1,13 +1,18 @@
 html{
   /* animation: opacity 2s; */
   overflow-x: hidden;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   cursor: pointer;
+}
+::-webkit-tap-highlight-color{
+  background-color:  rgba(255, 255, 255, 0) !important; 
 }
 
 ::-webkit-scrollbar{
