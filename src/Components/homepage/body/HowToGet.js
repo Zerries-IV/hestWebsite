@@ -1,9 +1,9 @@
 import React from 'react'
-import '../body/styles/Fifthbody.css'
+import '../body/styles/HowToGet.css'
 
-const Fifthbody = () => {
+const HowToGet = () => {
   return (
-    <div style={{padding: '10px 40px'}} className="FifthBody">
+    <div style={{padding: '10px 40px'}} className="HowToGet_Body">
         <h1 className="StyleText Roadmap For426"> HOW I GET</h1>
         <h2 className="StyleTextBottom RoadmapBottom"> $ HEST</h2>
         <div className="StepsToGet">
@@ -103,4 +103,4 @@ const Fifthbody = () => {
   )
 }
 
-export default Fifthbody
+export default HowToGet

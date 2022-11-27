@@ -1,5 +1,5 @@
 import React from 'react'
-import '../body/styles/Thirdbody.css'
+import '../body/styles/RoadMap.css'
 
 const ROADMAPLIST = [
     {
@@ -64,7 +64,7 @@ const ROADMAPLIST = [
     },
 ]
 
-const Thirdbody = () => {
+const RoadMap = () => {
   return (
     <div style={{ backgroundColor: '#e9e9e6', padding: '10px 0', overflowX: 'hidden'}}>
     {/* ANCHOR LINK FOR THIRDBODY IN SECONDBODY*/}
@@ -96,4 +96,4 @@ const Thirdbody = () => {
   )
 }
 
-export default Thirdbody
+export default RoadMap

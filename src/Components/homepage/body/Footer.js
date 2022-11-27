@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Logo, { MintMeLogo } from '../../global/Logo'
 import { SOCIALS } from '../../global/SocialIcons'
-import '../body/styles/Seventhbody.css'
+import '../body/styles/Footer.css'
 
-const Seventhbody = () => {
+const Footer = () => {
     const [text] = useState('0xa4C876143891F012991E5e06fABde7D6Ad31E1b0')
     function copyToClipboard(){
         navigator.clipboard.writeText(text)
@@ -11,9 +11,9 @@ const Seventhbody = () => {
   return (
     <div>
    <div style={{ backgroundColor: 'green', padding: '20px 30px', margin: '50px 0 0 0'}}
-   className="SeventhBody">
+   className="FooterBody">
     <h1 style={{ color: 'white', fontSize: '60px'}}
-    className='SeventhBodyH1'
+    className='FooterBodyH1'
     >
         Welcome to the community
         <br />
@@ -50,4 +50,4 @@ const Seventhbody = () => {
   )
 }
 
-export default Seventhbody
+export default Footer

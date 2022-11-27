@@ -1,5 +1,5 @@
 import React from 'react'
-import '../body/styles/Secondbody.css'
+import '../body/styles/WhyHest.css'
 
 const WHYHEST = [
     {
@@ -16,7 +16,7 @@ const WHYHEST = [
     }
 ]
 
-const Secondbody = () => {
+const WhyHest = () => {
   return (
     <div style={{ overflowX: 'hidden'}}>
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id='SVG'>
@@ -49,4 +49,4 @@ const Secondbody = () => {
   )
 }
 
-export default Secondbody
+export default WhyHest

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import '../body/styles/Firstbody.css'
-import Logo, { MintMeLogo } from '../../global/Logo'
+import '../body/styles/Hero.css'
+import Logo, { LiveCoinWatchLogo, XeggexLogo } from '../../global/Logo'
 import {SOCIALS} from '../../global/SocialIcons'
 
-const Firstbody = () => {
+const Hero = () => {
     const [text] = useState('0xa4C876143891F012991E5e06fABde7D6Ad31E1b0')
     const [alert, setAlert] = useState(false)
     function copyToClipboard(){
@@ -11,7 +11,7 @@ const Firstbody = () => {
         setAlert(!alert)
     }
   return (
-    <div className='First_Body'>
+    <div className='Hero_Body'>
     <div>
     <h1 className='HestIntro'>
         Hey there!!<br />
@@ -21,16 +21,18 @@ const Firstbody = () => {
     Welcome to the crypto that would revolutionize the world.
     </h4>
     <p className='IntroPSub'> Hest is new to the Binance ecosystem and has properly adjusted <br />to become the best of its kind</p>
-    <div>
-      <a href='https://www.mintme.com/token/Hest/MINTME/trade' style={{
-        textDecoration: 'none'
-      }}>
+    <div style={{ display: 'flex', gap: '.5rem'}}>
       <button className="MintMeButton">
-       <MintMeLogo H = '30px'/>
-       <h3 className='FirstBodyMintMeButton_Text'>Get started on mintMe </h3>
-    </button>
-    </a>
-    </div>
+      <a href="https://xeggex.com/asset/HS">
+      <XeggexLogo W = '100px' />
+      </a>
+      </button>
+      <button className="MintMeButton">
+      <a href="https://www.livecoinwatch.com/price/HEST-_HS">
+      <LiveCoinWatchLogo HEIGHT = '40px' />
+      </a>
+      </button>
+      </div>
     {
         !alert
         ? <div></div>
@@ -53,7 +55,7 @@ const Firstbody = () => {
     </div>
     {/* FOLLOW OUR SOCIALS */}
     <h2 className='JoinUs'> You have an opinion? Join us on</h2>
-    <div className='FirstBodySocials'>
+    <div className='HeroBodySocials'>
     {
         SOCIALS.map(socials => {
             return (
@@ -69,7 +71,7 @@ const Firstbody = () => {
     <Logo HEIGHT= '100%'/>
     </div>
     </div>
-  )
+  )   
 }
 
-export default Firstbody
+export default Hero

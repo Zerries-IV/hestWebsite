@@ -1,0 +1,21 @@
+.PartnerLogo{
+    margin-top: -100px !important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 769px){
+    .PartnerBody {
+        margin-top: -60px !important;
+    }
+}
+@media only screen and (max-width: 426px){
+    .PartnerBody {
+        margin-top: -160px !important;
+    }
+    .PartnerLogo{
+        margin-top: 20px !important;
+    }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import '../body/styles/Sixthbody.css'
+import '../body/styles/FAQ.css'
 
-const Sixthbody = () => {
+const FAQ = () => {
     const [a, setA] = useState(false)
     const [b, setB] = useState(false)
   return (
@@ -69,4 +69,4 @@ const Sixthbody = () => {
   )
 }
 
-export default Sixthbody
+export default FAQ

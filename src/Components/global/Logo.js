@@ -4,11 +4,14 @@ import { useNavigate } from 'react-router'
 
 const LogoImg = 'https://raw.githubusercontent.com/tinymanorg/asa-list/review/assets/HS-370073176/icon.png'
 const MintMe = 'https://s2.coinmarketcap.com/static/img/coins/200x200/3361.png'
+const Xeggex = 'data:image/png;base64,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'
+const LiveCoinWatch = 'https://lcw.nyc3.cdn.digitaloceanspaces.com/production/social/twitter.png'
+const Nomics = 'https://avatars.githubusercontent.com/u/32463793?s=280&v=4'
 
 const Logo = (props) => {
   const navigate = useNavigate()
   return (
-      <img src={LogoImg} className= "App-logo" srcSet='' alt='Logo' height={props.HEIGHT}
+      <img src={LogoImg} className= "App-logo" srcSet='' alt='HEST' height={props.HEIGHT}
       onClick={() => navigate('/')}
       />
   )
@@ -16,8 +19,26 @@ const Logo = (props) => {
 
 export const MintMeLogo = (props) => {
   return (
-      <img src={MintMe} alt='Logo' className= "App-logo" srcSet="" style={{ height: props.H}}
+      <img src={MintMe} alt='MINT ME' className= "App-logo" srcSet="" style={{ height: props.H}}
       />
+  )
+}
+
+export const XeggexLogo = (props) => {
+  return (
+    <img src={Xeggex} alt='XEGGEX LOGO' srcSet='' style={{ width: props.W}} />
+  )
+}
+
+export const LiveCoinWatchLogo =(props) => {
+  return (
+    <img src={LiveCoinWatch} alt="Livecoin LOGO" srcSet="" height={props.HEIGHT}/>
+  )
+}
+
+export const NomicsLogo = (props) => {
+  return (
+    <img src={Nomics} alt="NOMICS logo" srcSet="" height={props.HEIGHT}/>
   )
 }
 

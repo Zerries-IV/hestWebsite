@@ -1,22 +1,24 @@
 import React from 'react'
-import Fifthbody from './body/Fifthbody'
-import Firstbody from './body/Firstbody'
-import Fourthbody from './body/Fourthbody'
-import Secondbody from './body/Secondbody'
-import Seventhbody from './body/Seventhbody'
-import Sixthbody from './body/Sixthbody'
-import Thirdbody from './body/Thirdbody'
+import HowToGet from './body/HowToGet' 
+import Tokenomic from './body/Tokenomic'
+import Hero from './body/Hero'
+import WhyHest from './body/WhyHest'
+import Footer from './body/Footer'
+import FAQ from './body/FAQ'
+import RoadMap from './body/RoadMap'
+import Partner from './body/Partner'
 
 const Body = () => {
   return (
     <div>
-        <Firstbody />
-        <Secondbody />
-        <Thirdbody />
-        <Fourthbody />
-        <Fifthbody />
-        <Sixthbody />
-        <Seventhbody />
+        <Hero />
+        <Partner />
+        <WhyHest />
+        <RoadMap />
+        <Tokenomic />
+        <HowToGet />
+        <FAQ />
+        <Footer />
     </div>
   )
 }

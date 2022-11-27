@@ -1,7 +1,7 @@
 import { Divider } from '@mui/material'
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import Logo, { MintMeLogo } from '../global/Logo'
+import Logo, { MintMeLogo, NomicsLogo } from '../global/Logo'
 import { SOCIALS } from '../global/SocialIcons'
 import '../homepage/styles/NavigationBar.css'
 
@@ -69,16 +69,18 @@ const NavigationBar = () => {
       }
     </div>
     {/* SWAPS */}
-    <div>
-      <a href='https://www.mintme.com/token/Hest/MINTME/trade' style={{
-        textDecoration: 'none'
-      }}>
+      <div style={{ display: 'flex', gap: '.5rem'}}>
       <button className="MintMeButton">
-       <MintMeLogo H = '30px'/>
-       <h3 className='MintMeButton_Text'>Connect to mintMe </h3>
+      <a href="https://www.mintme.com/token/Hest/MINTME/trade">
+      <MintMeLogo H = '40px'/>
+      </a>
       </button>
-    </a>
-    </div>
+      <button className="MintMeButton">
+      <a href="https://nomics.com/assets/hs2-hest">
+      <NomicsLogo HEIGHT = '40px' />
+      </a>
+      </button>
+      </div>
     </div>
     {/* Navigation bar for 426px and below */}
     <Navbar className="NavigationFor426px">

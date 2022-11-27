@@ -1,5 +1,5 @@
 import React from 'react'
-import '../body/styles/Fourthbody.css'
+import '../body/styles/Tokenomic.css'
 
 const TOKENOMICS = [
   {
@@ -28,7 +28,7 @@ const TOKENOMICS = [
   },
 ]
 
-const Fourthbody = () => {
+const Tokenomic = () => {
   return (
     <div style={{ backgroundColor: '#e9e9e6', padding: '10px 40px', overflowX: 'hidden'}}
     className="FourthBody"
@@ -71,4 +71,4 @@ const Fourthbody = () => {
   )
 }
 
-export default Fourthbody
+export default Tokenomic

@@ -2,7 +2,7 @@
     font-size: 80px;
 }
 
-.First_Body{
+.Hero_Body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 20px;
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 426px){
-    .First_Body {
+    .Hero_Body {
         display: flex;
         flex-direction: column;
     }
@@ -38,7 +38,7 @@
     .JoinUs{
         font-size: 18px;
     }
-    .FirstBodySocials{
+    .HeroBodySocials{
         margin-top: -20px;
     }
 }
